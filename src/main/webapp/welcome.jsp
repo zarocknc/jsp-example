@@ -13,5 +13,7 @@
     </head>
     <body>
         <h1>Estas authenticado</h1>
+        <span>usuario: </span>
+        <%= request.getAttribute("username") %>
     </body>
 </html>

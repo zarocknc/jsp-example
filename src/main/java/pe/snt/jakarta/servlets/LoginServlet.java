@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         if("admin".equals(username) && "12345".equals(password)){
-            request.setAttribute(username, username);
+            request.setAttribute("username", username);
             var dispatcher = request.getRequestDispatcher("/welcome.jsp");
             dispatcher.forward(request, response);
         } else {
